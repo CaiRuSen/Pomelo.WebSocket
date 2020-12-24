@@ -5,10 +5,10 @@
 并提供额外的 api 功能 给 web服务 去使用，比如 在线的用户数量（AllOnlineUser接口） 和 某个用户是否在线（UserIsOnline接口），顺便提供消息的测试发送接口（Test_ClientSendMsg接口）（该接口用于测试 ws 服务是否正常运行，可用 http://www.websocket-test.com 来进行连接ws测试看看是否能连接正常并收到消息）
 
 使用步骤：
-1.配置 appsettings.json 文件（Auth，Redis 和 WebSocket.Host 的相关配置）
-2.获取 ws 连接（GetWSLink接口）
-3.客户端进行 ws 连接，并发送心跳包保持连接
-4.可用服务提供的发送消息（Test_ClientSendMsg接口）
+1.配置 appsettings.json 文件（Auth，Redis 和 WebSocket.Host 的相关配置）<br/>
+2.获取 ws 连接（GetWSLink接口）<br/>
+3.客户端进行 ws 连接，并发送心跳包保持连接<br/>
+4.可使用服务提供的发送消息接口来测试（Test_ClientSendMsg接口，生产环境就不建议调用该接口了，而是通过该接口的具体实现）
 
 可用业务：IM（即时消息通讯功能等），实时消息推送（Web消息提醒，视频弹幕等）
 
