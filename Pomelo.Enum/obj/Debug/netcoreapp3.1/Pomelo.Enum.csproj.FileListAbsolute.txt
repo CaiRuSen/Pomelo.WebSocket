@@ -1,0 +1,9 @@
+F:\柚子\Pomelo.WebSocket\Pomelo.Enum\bin\Debug\netcoreapp3.1\Pomelo.Enum.deps.json
+F:\柚子\Pomelo.WebSocket\Pomelo.Enum\bin\Debug\netcoreapp3.1\Pomelo.Enum.dll
+F:\柚子\Pomelo.WebSocket\Pomelo.Enum\bin\Debug\netcoreapp3.1\Pomelo.Enum.pdb
+F:\柚子\Pomelo.WebSocket\Pomelo.Enum\obj\Debug\netcoreapp3.1\Pomelo.Enum.csprojAssemblyReference.cache
+F:\柚子\Pomelo.WebSocket\Pomelo.Enum\obj\Debug\netcoreapp3.1\Pomelo.Enum.AssemblyInfoInputs.cache
+F:\柚子\Pomelo.WebSocket\Pomelo.Enum\obj\Debug\netcoreapp3.1\Pomelo.Enum.AssemblyInfo.cs
+F:\柚子\Pomelo.WebSocket\Pomelo.Enum\obj\Debug\netcoreapp3.1\Pomelo.Enum.csproj.CoreCompileInputs.cache
+F:\柚子\Pomelo.WebSocket\Pomelo.Enum\obj\Debug\netcoreapp3.1\Pomelo.Enum.dll
+F:\柚子\Pomelo.WebSocket\Pomelo.Enum\obj\Debug\netcoreapp3.1\Pomelo.Enum.pdb

@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Pomelo.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Pomelo.Web.Controllers.BaseController">
+            <summary>
+            Base控制器
+            </summary>
+        </member>
+        <member name="F:Pomelo.Web.Controllers.BaseController._Logger">
+            <summary>
+            日志
+            </summary>
+        </member>
+        <member name="M:Pomelo.Web.Controllers.BaseController.GetAuthConfig">
+            <summary>
+            获取授权配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Pomelo.Web.Controllers.HomeController">
+            <summary>
+            Home控制器，用于页面跳转
+            </summary>
+        </member>
+        <member name="P:Pomelo.Web.Controllers.WS.Dto.GetWsServerInput.ClientId">
+            <summary>
+            用于负载均衡时候的服务Id
+            </summary>
+        </member>
+        <member name="P:Pomelo.Web.Controllers.WS.Dto.SendMsgInput.ToClientId">
+            <summary>
+            接受者id
+            </summary> 
+        </member>
+        <member name="P:Pomelo.Web.Controllers.WS.Dto.SendMsgInput.Type">
+            <summary>
+            消息事件类型，比如链接成功为 Link，普通消息为 Msg，上下线消息 OnLine，OffLine 等
+            </summary> 
+        </member>
+        <member name="P:Pomelo.Web.Controllers.WS.Dto.SendMsgInput.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="M:Pomelo.Web.Controllers.WSController.GetWSLink(Pomelo.Web.Controllers.WS.Dto.GetWsServerInput)">
+            <summary>
+            获取ws链接
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pomelo.Web.Controllers.WSController.Test_ClientSendMsg(Pomelo.Web.Controllers.WS.Dto.SendMsgInput)">
+            <summary>
+            测试-发送消息给目标用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pomelo.Web.Controllers.WSController.AllOnlineUser(Pomelo.Web.Controllers.WS.Dto.AllOnlineUserInput)">
+            <summary>
+            在线用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pomelo.Web.Controllers.WSController.UserIsOnline(Pomelo.Web.Controllers.WS.Dto.GetWsServerInput)">
+            <summary>
+            用户是否在线
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Pomelo.Web.Middleware.ErrorHandlingMiddleware">
+            <summary>
+            错误统一处理返回
+            </summary>
+        </member>
+        <member name="M:Pomelo.Web.Middleware.SocketHandle.Map(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            路由绑定处理
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="M:Pomelo.Web.Middleware.SocketHandle.AddWebsocket(System.String,System.Net.WebSockets.WebSocket)">
+            <summary>
+            添加ws在线记录
+            </summary>
+            <param name="clientId"></param> 
+            <param name="webSocket"></param>
+        </member>
+        <member name="M:Pomelo.Web.Middleware.SocketHandle.RemoveWebsocket(System.String)">
+            <summary>
+            移除ws在线记录
+            </summary>
+            <param name="clientId"></param>
+        </member>
+        <member name="M:Pomelo.Web.Middleware.SocketHandle.SendMsg(System.Net.WebSockets.WebSocket,System.String,System.Object)">
+            <summary>
+            ws消息发送
+            </summary>
+            <param name="webSocket"></param>
+            <param name="type"></param>
+            <param name="messageData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pomelo.Web.Middleware.SocketHandle.RedisSubScribleMessage(CSRedis.CSRedisClient.SubscribeMessageEventArgs)">
+            <summary>
+            Redis消息订阅
+            </summary>
+            <param name="e"></param>
+        </member>
+    </members>
+</doc>
